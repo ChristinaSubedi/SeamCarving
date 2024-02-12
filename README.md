@@ -10,8 +10,12 @@ Essentially, the algorithm works as follows:
 
 You have to install the image viewer nomacs (or
 any image viewer of your choice) by executing this command:
+
 sudo pacman -S --noconfirm nomacs
+
 You can now inspect the generated image out.ppm or the test files (e.g. test/data/small2.ppm):
+
 nomacs output.ppm
+
 If you want to inspect specific pixels you can press ctrl+I (or select Panels → Toolbars → Statusbar) to show the
 statusbar, which tells you about the coordinate and RGB values of the pixel at the position of your cursor.
