@@ -2,9 +2,15 @@ Seam carving is a method to scale the aspect ratio of images that aims to keep t
 http://www.faculty.idc.ac.il/arik/SCWeb/imret/.
 
 The algorithm generates a dispensability score for all areas/pixels of an image. Using this score, paths along the most dispensable pixels are searched that lie crosswise to the compressed or elongated direction. At these seams, pixels are added or removed. Different variants of the base algorithm usually distinguish themselves by the strategies they use to calculate the dispensability score. In the base version, we are interested in, it is done by considering only the difference between the color values of neighboring pixels. We call this difference the energy. Pixels with the least energy are the most dispensable ones. We also treat only the downsizing case.
+
 Essentially, the algorithm works as follows:
+
 • Calculate the local energy of every pixel
-• Calculate the energy of all adjacent vertical pixel-paths • Find the pixel-paths with minimal energy
+
+• Calculate the energy of all adjacent vertical pixel-paths 
+
+• Find the pixel-paths with minimal energy
+
 • Remove the pixels of this path from the image
 
 
